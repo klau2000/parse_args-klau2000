@@ -11,7 +11,7 @@ char ** parse_args (char *line) {
   ans = malloc(256);
   char *curr = line;
   int count = 0;
-  while (curr){
+  while (strsep(&curr, " ")){
     ans[count] = strsep(&curr, " ");
     count++;
   }
