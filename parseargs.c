@@ -7,7 +7,8 @@
 #include <unistd.h>
 
 char ** parse_args (char *line) {
-  char ** ans = malloc ( 5 * sizeof(line));
+  char ** ans;
+  ans = malloc ( 5 * sizeof(line));
   char *curr = line;
   int count = 0;
   while (curr){
