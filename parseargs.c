@@ -8,7 +8,7 @@
 
 char ** parse_args (char *line) {
   char ** ans;
-  ans = malloc (5 * sizeof(char *);
+  ans = malloc(256);
   char *curr = line;
   int count = 0;
   while (curr){
